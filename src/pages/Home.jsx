@@ -1,6 +1,7 @@
 
 // array of things I'm learning
 const knowledge = ['how to build this site'];
+import ChangingTextExample from "../components/learningbar";
 
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
       <div>
         {/* WHEN home page is selected */}
         {/* THEN Learning bar fades between different topics */}
-        <p className="learning-bar">Lucas is learning how to build this site!</p>
+        {/* <p className="learning-bar">{ChangingTextExample()}</p> */}
         <h1>Home Page</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque

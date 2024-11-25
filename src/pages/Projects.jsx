@@ -1,7 +1,5 @@
 import { projects, testProjects } from '../components/projectList.jsx';
-import { Link } from 'react-router-dom';
 import { personalInfo } from '../components/contactFunction.jsx';
-import { useEffect } from 'react';
 
 function renderProjectPiece(project) {
     const title = project.title;
@@ -41,12 +39,10 @@ export default function Projects() {
     const projectModule = renderProjectsModule(testProjects);
 
     return (
-        <div>
+        <>
             <h1>Project Page</h1>
-            <p>
-                See below a list of some of my favorite project pieces!
-            </p>
+            <p>See below a list of some of my favorite project pieces!</p>
             <div className='projectmount'>{projectModule}</div>
-        </div>
+        </>
     );
 };

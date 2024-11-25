@@ -4,28 +4,32 @@ import { Link } from "react-router-dom";
 
 const ButtonMailto = ({ mailto, label }) => {
     return (
-        <Link
-            to='#'
-            onClick={(e) => {
-                window.location.href = mailto;
-                e.preventDefault();
-            }}
-        >
-            {label}
-        </Link>
+        <button>
+            <Link
+                to='#'
+                onClick={(e) => {
+                    window.location.href = mailto;
+                    e.preventDefault();
+                }}
+            >
+                {label}
+            </Link>
+        </button>
     );
 };
 
 const ButtonGitHub = ({ github, label }) => {
     return (
-        <Link
-            to='#'
-            onClick={(e) => {
-                window.location.href = github;
-                e.preventDefault();
-            }}>
-            {label}
-        </Link>
+        <button>
+            <Link
+                to='#'
+                onClick={(e) => {
+                    window.location.href = github;
+                    e.preventDefault();
+                }}>
+                {label}
+            </Link>
+        </button>
     );
 };
 
@@ -40,5 +44,5 @@ export const personalInfo = {
         I firmly believe that with enough work, anyone can master anything—a philosophy that drives me to constantly refine my coding skills and expand my knowledge. My creative pursuits, such as writing and painting, enhance my ability to approach coding challenges with fresh, concise solutions. As a gamer and media enthusiast, I understand the importance of intuitive design and user-centric development.
         <br />
         I'm excited to apply my growing skills and passion to collaborative projects and continue learning in a dynamic professional environment.
-        </blockquote>
+    </blockquote>
 }

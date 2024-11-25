@@ -4,8 +4,9 @@ export default function pageFooter() {
     return (
         <section>
             <p>Made without sleep.</p>
-            <button>{personalInfo.email}</button> &nbsp;
-            <button>{personalInfo.gitHub}</button>
+            {personalInfo.email} &nbsp;
+            {personalInfo.gitHub}
+            <br />
         </section>
     )
 }
