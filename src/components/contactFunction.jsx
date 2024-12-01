@@ -33,6 +33,16 @@ const ButtonGitHub = ({ github, label }) => {
     );
 };
 
+const EmailForm = () => {
+    return (
+        <form>
+            <input>Email</input>
+            <input>Name</input>
+            <input>Send Me a Message!</input>
+        </form>
+    )
+}
+
 
 export const personalInfo = {
     email: <ButtonMailto label='Questions? Email me!' mailto='mailto:lucas.hallmanc@gmail.com' />,

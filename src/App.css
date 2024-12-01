@@ -36,34 +36,7 @@
   }
 }
 
-.learning-bar {
-  background-color: lightslategray;
-  border-top: solid 5px;
-  border-bottom: solid 5px;
-  border-color: #464646;
-  font-style: italic;
-  animation-name: learning-bar;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
 
-@keyframes learning-bar {
-  0% {
-    opacity: 0%;
-  }
-
-  40% {
-    opacity: 100%;
-  }
-
-  60% {
-    opacity: 100%;
-  }
-
-  100% {
-    opacity: 0%;
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

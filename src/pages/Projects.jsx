@@ -1,5 +1,6 @@
 import { projects, testProjects } from '../components/projectList.jsx';
 import { personalInfo } from '../components/contactFunction.jsx';
+import { ThemeContext } from '../components/ThemeContext.jsx';
 
 function renderProjectPiece(project) {
     const title = project.title;
@@ -9,7 +10,7 @@ function renderProjectPiece(project) {
     const gitLink = project.gitLink;
     return (
         <>
-            <section className="card">
+            <div className="card">
                 <div>
                     {title}
                     {img}
@@ -18,10 +19,10 @@ function renderProjectPiece(project) {
                     {desc}
                 </section>
                 <div>{personalInfo.email}</div>
-            </section>
+            </div>
         </>
-    )
-}
+    );
+};
 
 //run renderProjectPiece on all projects in the array, then stick those onto the projectmount on the project page.
 
@@ -39,10 +40,12 @@ export default function Projects() {
     const projectModule = renderProjectsModule(testProjects);
 
     return (
-        <>
-            <h1>Project Page</h1>
-            <p>See below a list of some of my favorite project pieces!</p>
+        <section>
+            <div>
+                <h1>Project Page</h1>
+                <p>See below a list of some of my favorite project pieces!</p>
+            </div>
             <div className='projectmount'>{projectModule}</div>
-        </>
+        </section>
     );
 };

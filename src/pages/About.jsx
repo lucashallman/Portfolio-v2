@@ -5,9 +5,9 @@ export default function About() {
     
 
     return (
-        <div>
+        <section>
             <h2>Web Developer in Training | Passionate Problem Solver</h2>
             {personalInfo.shortBio}
-        </div>
+        </section>
     )
 };

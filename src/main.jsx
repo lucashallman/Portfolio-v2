@@ -12,6 +12,7 @@ import Error from './pages/Error.jsx';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
+import { ThemeProvider } from './components/ThemeContext.jsx';
 
 //Router definition
 
@@ -46,5 +47,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <ThemeProvider>
+    <RouterProvider router={router} />
+  </ThemeProvider>
 )

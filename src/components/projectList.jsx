@@ -14,7 +14,11 @@ const ButtonLink = ({link, label}) => {
 };
 
 const projects = [
-    {}
+    {
+        title: <h2>PetZeppelin!</h2>,
+        img: <img src="https://placecats.com/300/200?fit=contain&position=center" alt="Test Image Provided by PlaceCats.com"/>,
+        shortDesc: <p>A playful social media platform for pets, built to demonstrate team collaboration, Tailwind CSS integration, and local storage manipulation. PetZeppelin allows users to create pet profiles and posts, with data stored locally in the browser, simulating key social media functionalities without a backend. This project highlights efficient styling with Tailwind CSS and client-side data handling for a seamless user experience.</p>
+    }
 ];
 
 const testProjects = [
