@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { createContext } from "react";
-
+import logo from '../assets/images/logo.png';
 import LearningBar from './learningbar';
 
 export const navContext = createContext();
@@ -32,9 +32,9 @@ export default function pageHeader() {
 
                 <div>
                     <h1>Lucas H.</h1>
-                    {/* <p>The H stands for Hallman.</p> */}
+                    <p className='tagline'>The H stands for Hallman.</p>
                 </div>
-                <img src='../assets/images/logo.png' alt='LH logo'></img>
+                <img src={logo} alt='LH logo'></img>
             </section>
             <LearningBar />
         </div>

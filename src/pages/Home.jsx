@@ -1,4 +1,4 @@
-
+import profile from '../assets/images/profile2.jpg';
 // array of things I'm learning
 const knowledge = ['how to build this site'];
 import ChangingTextExample from "../components/learningbar";
@@ -6,7 +6,7 @@ import ChangingTextExample from "../components/learningbar";
 
 export default function Home() {
     return (
-      <section>
+      <section className='homePage'>
         {/* WHEN home page is selected */}
         {/* THEN Learning bar fades between different topics */}
         {/* <p className="learning-bar">{ChangingTextExample()}</p> */}
@@ -23,6 +23,7 @@ export default function Home() {
           vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
           fames ac ante ipsum primis in faucibus.
         </p>
+        <img src={profile} alt='profile'></img>
       </section>
     );
   }

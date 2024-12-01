@@ -99,6 +99,24 @@ h1 {
   border-color: var(--neutralBorder);
 }
 
+/* footer */
+
+footer {
+  height: 20vh;
+  margin: 0;
+  border: 2px solid;
+
+  background-image: linear-gradient(var(--primary), var(--secondary));
+}
+
+footer a:hover {
+  color: #59005f;
+  font-size: 20px
+} 
+
+footer button:hover {
+  box-shadow: 0px 0px 10px 10px #666666;
+}
 
 
 
@@ -170,23 +188,68 @@ h1 {
   position: relative;
 }
 
-/* footer */
-
-footer {
-  height: 20vh;
-  margin: 0;
-  border: 2px solid;
-
-  background-image: linear-gradient(var(--primary), var(--secondary));
+.header img {
+  opacity: 70%;
 }
 
-footer a:hover {
-  color: #59005f;
-  font-size: 20px
-} 
+/* Home Layout */
 
-footer button:hover {
-  box-shadow: 0px 0px 10px 10px #666666;
+.homePage h1 {
+  margin-left: auto;
+}
+
+.homePage img {
+  height: auto;
+  max-width: 20%;
+  border: 2px solid var(--secondary);
+}
+
+/* Contact Form */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 60vi;
+
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 2%;
+}
+
+.contact input {
+  background-color: var(--neutralHighlight);
+
+  border: 2px solid;
+  border-radius: 5px;
+  box-shadow: none;
+
+  font-size: large;
+  color: #432D59;
+}
+
+.contact input::placeholder {
+  color: var(--neutralBackground);
+}
+
+.contact textarea {
+  background-color: var(--neutralHighlight);
+
+  border: 2px solid;
+  border-radius: 5px;
+
+  font-size: large;
+  color: #432D59;
+}
+
+.contact textarea::placeholder {
+  color: var(--neutralBackground);
 }
 
 /* Portfolio */
@@ -195,6 +258,10 @@ footer button:hover {
   border: 2px solid #1a1a1a;
   border-radius: 40px;
   margin: 40px;
+  padding: 10px;
+
+  max-height: 800px;
+
   background-image: radial-gradient(var(--neutralBackground), var(--darkBackground));
 }
 

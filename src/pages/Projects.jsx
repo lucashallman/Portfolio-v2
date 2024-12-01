@@ -18,7 +18,6 @@ function renderProjectPiece(project) {
                 <section className="content">
                     {desc}
                 </section>
-                <div>{personalInfo.email}</div>
             </div>
         </>
     );

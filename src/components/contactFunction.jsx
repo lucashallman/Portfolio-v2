@@ -33,14 +33,78 @@ const ButtonGitHub = ({ github, label }) => {
     );
 };
 
-const EmailForm = () => {
+ function Form() {
+    // Here we set two state variables for firstName and lastName using `useState`
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [subject, setSubject] = useState('');
+
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { name, value } = e.target;
+
+        // detect which input is changing and update the appropriate state
+        if (name === 'name') {
+            return (setName(value));
+        } else if (name === 'email') {
+            return (setEmail(value)); 
+        } else if (name === 'message') {
+            return (setMessage(value));
+        }
+    };
+
+    const handleFormSubmit = (e) => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+        // take states from form inputs and arrange a mailto
+
+        const preparedBody = `Hi Lucas, I'm ${name}! \n ${message}`
+        const encodedSubject = encodeURIComponent(subject);
+        const encodedBody = encodeURIComponent(preparedBody);
+
+        const mailtoLink = `mailto:${email}?subject=${encodedSubject}$body=${encodedBody}`
+
+        window.open(mailtoLink, "_blank");
+    };
+
     return (
-        <form>
-            <input>Email</input>
-            <input>Name</input>
-            <input>Send Me a Message!</input>
-        </form>
-    )
+        <div className="container text-center">
+            <form className="form" onSubmit={handleFormSubmit}>
+                <input
+                    value={name}
+                    name="name"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Your Name?"
+                />
+                <input
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Your E-mail?"
+                />
+                <input 
+                    value={subject}
+                    name="subject"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="What would you like to talk about?"
+                />
+                <textarea
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Ask me a question, send me a joke, or just say hey!"
+                />
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    );
 }
 
 
