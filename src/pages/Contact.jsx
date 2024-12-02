@@ -58,7 +58,7 @@ export default function Contact() {
         const encodedSubject = encodeURIComponent(subject);
         const encodedBody = encodeURIComponent(preparedBody);
 
-        const mailtoLink = `mailto:${email}?subject=${encodedSubject}$body=${encodedBody}`
+        const mailtoLink = `mailto:lucas.hallmanc@gmail.com?subject=${encodedSubject}$body=${encodedBody}`
 
         window.open(mailtoLink, "_blank");
     };
