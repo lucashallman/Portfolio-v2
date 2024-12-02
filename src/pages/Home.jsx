@@ -1,12 +1,13 @@
 import profile from '../assets/images/profile2.jpg';
 // array of things I'm learning
 const knowledge = ['how to build this site'];
-import ChangingTextExample from "../components/learningbar";
+import LearningBar from "../components/learningbar";
 
 
 export default function Home() {
     return (
       <section className='homePage'>
+        <LearningBar />
         {/* WHEN home page is selected */}
         {/* THEN Learning bar fades between different topics */}
         {/* <p className="learning-bar">{ChangingTextExample()}</p> */}
