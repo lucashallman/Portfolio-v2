@@ -1,8 +1,18 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## My professional portfolio as of 12/2/2024. Contains everything you need to know about me and my professional life. Currently WIP
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+"This is an updated version of my original portfolio, this time build using React and with a much deeper understanding of javascript. Currently hosted on netlify."
+
+Current Site: https://lucashallmanportfolio.netlify.app
+
+## Questions
+
+GitHub Repository: https://github.com/lucashallman/Portfolio-v2
+
+
+
+Contact me here: [lucas.hallmanc@gmail.com](lucas.hallmanc@gmail.com)
+
