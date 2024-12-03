@@ -65,6 +65,7 @@ export default function Contact() {
 
     return (
         <div className="contact">
+            <br />
             <form className="form" onSubmit={handleFormSubmit}>
                 <h2>Name</h2><p className="alert">{alert1}</p>
                 <input
@@ -81,7 +82,7 @@ export default function Contact() {
                     name="email"
                     onChange={handleInputChange}
                     onBlur={handleBlur}
-                    type="text"
+                    type="email"
                     placeholder="Your E-mail?"
                 />
                 <h2>Subject</h2><p className="alert">{alert3}</p>
