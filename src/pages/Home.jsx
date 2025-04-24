@@ -13,16 +13,7 @@ export default function Home() {
         {/* <p className="learning-bar">{ChangingTextExample()}</p> */}
         <h1>Home Page</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus.
+          Hi, I’m a budding full-stack developer with hands-on experience in the MERN tech stack and a strong interest in both front-end and back-end web development. I recently completed an intensive 6-month coding bootcamp through the University of Minnesota, which not only sharpened my technical skills but also sparked a deep passion for programming. I'm continuously learning and building, whether it's crafting interactive websites, developing video games in my spare time, or expressing creativity through both digital and traditional painting. This portfolio is a reflection of my journey so far
         </p>
         <img src={profile} alt='profile'></img>
       </section>
