@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function learningBar() {
-    const messages = ["React", "CSS", "Full Stack Programming", "Mind Reading"];
+    const messages = ["Ruby", "C#", "GameDev", "Python", "COMPTIA A+"];
     const [index, setIndex] = useState(0);
   
     useEffect(() => {
